@@ -74,6 +74,7 @@
       <AdditionalIncludeDirectories>D:\Git\boost</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>D:\Build\Boost\Bin\$(Configuration)\$(PlatformTarget)\</AdditionalLibraryDirectories>
