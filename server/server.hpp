@@ -27,7 +27,7 @@ private:
           m_buffer,
           "\0",
           [ this, self ]( boost::system::error_code ec, 
-                          std::size_t
+                          std::size_t               /**/
                         )
           {
               if ( ! ec )
