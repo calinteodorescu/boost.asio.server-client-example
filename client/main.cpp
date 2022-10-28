@@ -18,14 +18,18 @@ int main( int   argc,
                                             "25000"
                                           )
                         );
-    
-    std::string data{ "some client data ..." };
+    for( ;; )
+    {
+        std::string data{ "some client data ..." };
 
-    auto result = boost::asio::write( socket, 
-                                      boost::asio::buffer( data )
-                                    );
+        auto result = boost::asio::write( socket, 
+                                          boost::asio::buffer( data )
+                                        );
     
-    std::cout << "data sent: " << data.length( ) << '/' << result << std::endl;
+        std::cout << "data sent: " << data.length( ) << '/' << result << std::endl;
+
+        std::cout << "? "; char c; std::cin >> c;
+    }
 
     boost::system::error_code ec;
 
